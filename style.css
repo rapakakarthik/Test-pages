@@ -1,0 +1,57 @@
+/* style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  background: linear-gradient(-45deg, #ff4b2b, #ff416c, #00c6ff, #0072ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+.about { background: #2c3e50; }
+.services { background: #16a085; }
+.contact { background: #8e44ad; }
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Animated Background */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
